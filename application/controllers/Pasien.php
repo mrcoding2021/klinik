@@ -2,7 +2,7 @@
 defined('BASEPATH') or exit('No direct script access allowed');
 
 
-class Jadwal extends CI_Controller
+class Pasien extends CI_Controller
 {
 
   public function __construct()
@@ -46,8 +46,8 @@ class Jadwal extends CI_Controller
     $hari = $this->db->get('tb_user_jadwal')->result();
 
     $data = [
-      'title' => 'Jadwal',
-      'page'  => 'jadwal/index',
+      'title' => 'Pasien',
+      'page'  => 'pasien/index',
       'hari'  => $hari,
     ];
     $this->core($data);
